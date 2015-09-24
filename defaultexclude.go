@@ -14,6 +14,11 @@ var defaultExcludes = []string{
 	`(^|/)#.*#$`,
 	// OS X
 	`(^|/)\.DS_Store$`,
+	// Go vendor
+	`(^|/)\.vendor`,
+	`(^|/)\vendor`,
+	// node modules
+	`(^|/)\node_modules`,
 }
 
 var defaultExcludeMatcher multiMatcher
